@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikhil portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <h2>Portfolio</h2>
+        <li>
+          <a href=""> <img src="/images/home.png" alt="not found" /></a>
+        </li>
+        <li>
+          <a href="#skill"
+            ><img src="/images/skill-development.png" alt="not found"
+          /></a>
+        </li>
+        <li>
+          <a href="#" id="openPdfLink"
+            ><img src="/images/resume.png" alt="not found"
+          /></a>
+        </li>
+        <li>
+          <a href="#about"
+            ><img src="/images/information-button.png" alt="not found"
+          /></a>
+        </li>
+        <li>
+          <a href="#contactForm"
+            ><img src="/images/contact-us.png" alt="not found"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div id="back">
+          <div class="name">
+            <h1>NIKHIL PRAJAPAT</h1>
+            <h3>FrontEnd Web Developer</h3>
+            <p>
+              Smart work give best result ,But hard work is show ability of a
+              person
+            </p>
+          </div>
+          <div class="photo">
+            <img src="/images/me.jpg" alt="" />
+          </div>
+        </div>
+
+        <h1 class="sk">SKILLS</h1>
+        <div id="skill">
+          <div class="list">
+            <div class="image">
+              <img src="/images/html.jpg" alt="" />
+            </div>
+            <div class="Info">
+              <h2>HTML</h2>
+              <p>
+                I have a solid understanding of HTML and can structure clean,
+                semantic, and accessible web pages. I am confident in using
+                tags, forms, tables, and media elements to create responsive and
+                well-structured websites.
+              </p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="image">
+              <img src="/images/css.jpg" alt="" />
+            </div>
+            <div class="Info">
+              <h2>CSS</h2>
+              <p>
+                I have a strong grasp of CSS and can design visually appealing,
+                responsive, and user-friendly web pages. I’m skilled in layout
+                techniques like Flexbox and Grid, and can style components using
+                classes, pseudo-classes, and transitions.
+              </p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="image">
+              <img src="/images/javascript.png" alt="" />
+            </div>
+            <div class="Info">
+              <h2>JAVASCRIPT</h2>
+              <p>
+                I have a good understanding of JavaScript and can add
+                interactivity and logic to web pages. I’m familiar with
+                variables, functions, DOM manipulation, loops, and event
+                handling to create dynamic and user-friendly websites.
+              </p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="image">
+              <img src="/images/bootstrap.jpeg" alt="" />
+            </div>
+            <div class="Info">
+              <h2>BOOTSTRAP</h2>
+              <p>
+                I have hands-on experience with Bootstrap and can build
+                responsive, mobile-first websites using its grid system and
+                components. I’m familiar with using utility classes, modals,
+                carousels, and customizing themes effectively.
+              </p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="image">
+              <img src="/images/tailwind css.png" alt="" />
+            </div>
+            <div class="Info">
+              <h2>TAILWIND</h2>
+              <p>
+                I have practical experience with Tailwind CSS and can build
+                modern, responsive UIs quickly using its utility-first classes.
+                I'm skilled in customizing designs without writing custom CSS
+                and maintaining clean code.
+              </p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="image">
+              <img src="/images/github.jpg" alt="" />
+            </div>
+            <div class="Info">
+              <h2>GITHUB</h2>
+              <p>
+                I use GitHub to manage code versions, collaborate on projects,
+                and host my repositories. I'm familiar with committing changes,
+                branching, pull requests, and deploying projects using GitHub
+                Pages.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="ab">ABOUT</h1>
+        <div id="about">
+          <div class="education">
+            <div class="edu">
+              <h3 class="mar">10th</h3>
+              <ul>
+                <li>I was pass out with 93%</li>
+                <li>Shree Mahadev Bal Vidhya Mandir</li>
+                <li>Manpura jhalamand jodhpur(RAJ.)</li>
+              </ul>
+            </div>
+            <div class="edu">
+              <h3 class="mar">12th</h3>
+              <ul>
+                <li>I was passt out with 67.40%</li>
+                <li>Naveen sr. sec. school</li>
+                <li>Rathanada Ganta Garh Jodhpur(RAJ.)</li>
+              </ul>
+            </div>
+            <div class="edu">
+              <h3 class="mar">BCA</h3>
+              <ul>
+                <li>Currently I choice BCA , session 2024-25</li>
+                <li>G.D Memorial College</li>
+                <li>Kudi Bhagtashni jodhpur(RAJ.)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact">
+          <form class="contact-form" id="contactForm">
+            <h1>CONTACT ME</h1>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="MR./MS."
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your message"
+              required
+            ></textarea>
+
+            <button type="button" id="sendButton">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="foot">
+        <ul>
+          <li>7877541382</li>
+          <li>
+            <a href="mailto:nikhilkumar35024@gmail.com"
+              >nikhilkumar35024@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="app">
+        <ul>
+          <li class="logo">
+            <a href="https://www.facebook.com/share/15Ro3AkULg/"
+              ><img src="/images/facebook.png" alt=""
+            /></a>
+          </li>
+          <li class="logo">
+            <a href="https://www.instagram.com/_nikhil_7877"
+              ><img src="/images/instagram.jpg" alt=""
+            /></a>
+          </li>
+          <li class="logo">
+            <a href="https://www.youtube.com/@TechwithNiks-x1r"
+              ><img src="/images/youtube.png" alt=""
+            /></a>
+          </li>
+          <li class="logo">
+            <a href="https://t.me/7877541382"
+              ><img src="/images/Telegram_logo.svg.png" alt=""
+            /></a>
+          </li>
+          <li class="logo">
+            <a href="https://wa.me/7877541382"
+              ><img src="/images/whatsapp.jpg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="logic">
+        <h5>NiksPortfolio</h5>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

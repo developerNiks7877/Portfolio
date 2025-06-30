@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #0b365b;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 3px 5px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul h2 {
+  color: #ffffff;
+  margin-right: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a img {
+  height: 30px;
+  width: 30px;
+  filter: invert(1);
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
+nav ul li a img:hover {
+  filter: invert(0.8);
+}
+
+.container {
+  width: 100%;
+  height: 80%;
+}
+
+#back {
+  width: 100%;
+  height: 70vh;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.name {
+  margin: 0 6rem;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 13rem;
+}
+
+.photo {
+  margin-top: 3rem;
+  margin-right: 8rem;
+  width: 15rem;
+  height: 20rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid none;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sk {
+  margin-left: 70px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#skill {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: none;
+}
+
+.list {
+  margin: 20px auto;
+  max-width: 320px;
+  min-height: 400px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+  transition: ease-in 0.3s;
+  background: linear-gradient(135deg, #e0f7fa, #fffde7, #ffe0b2);
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+  margin: 20px auto 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.Info {
+  margin: 15px 15px;
+  font-family: "roboto", sans-serif;
+}
+
+.Info h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.Info p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
+.list:hover {
+  transform: scale(1.04);
+  transition: ease-out 0.3s;
+}
+
+.ab {
+  margin-left: 70px;
+  margin-top: 60px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.about {
+  margin: 2px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education {
+  display: flex;
+  align-items: center;
+}
+
+.edu {
+  padding: 30px;
+  margin: 20px auto;
+  min-width: 320px;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+  transition: ease-in 0.3s;
+  background: linear-gradient(135deg, #e0f7fa, #fffde7, #ffe0b2);
+}
+
+.edu:hover {
+  transform: scale(1.04);
+  transition: ease-out 0.3s;
+}
+
+.mar {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+}
+
+.edu ul li {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  list-style-type: none;
+}
+
+.contact {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0.8, 0.8, 0.8, 0.8);
+  margin: 50px 25%;
+  background: linear-gradient(135deg, #e0f7fa, #fffde7, #ffe0b2);
+}
+
+.contact-form {
+  width: 95%;
+}
+
+.contact-form h1 {
+  margin: 30px;
+  font-size: 40px;
+  color: #0b365b;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #0b365b;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select,
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #0b365b;
+}
+.contact-form button {
+  background-color: #0b365b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  width: 40%;
+  margin: 0 35%;
+  border-radius: 5rem;
+  transform: scale(1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #0b365b;
+  color: bisque;
+  padding: 10px 0;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  width: 100%;
+  height: auto;
+}
+
+.foot ul,
+.app ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.foot ul li,
+.app ul li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.foot a {
+  color: bisque;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.foot a:hover {
+  color: #f0e68c;
+}
+
+.app ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.app ul .logo a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app ul .logo a img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px bisque;
+}
+
+.logic h5 {
+  font-size: 18px;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------ MOBILE ONLY MEDIA QUERY (max-width: 480px) ------------------ */
+
+@media (max-width: 480px) {
+  /*NAVIGATION FIX */
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  nav ul h2 {
+    font-size: 16px;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+  }
+
+  nav ul li a img {
+    height: 18px;
+    width: 18px;
+  }
+
+  /*BACKGROUND SECTION */
+  #back {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    height: auto;
+  }
+
+  .name {
+    font-size: 16px;
+    margin: 1rem 0;
+  }
+
+  .photo {
+    width: 14rem;
+    height: 20rem;
+    margin: 15px auto;
+  }
+
+  /*SKILL SECTION */
+  .sk {
+    margin-left: 150px;
+  }
+  #skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .list {
+    width: 90%;
+    padding: 10px;
+    font-size: 13px;
+    align-items: center;
+    text-align: center;
+    min-height: 50px;
+  }
+
+  .list img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  /*ABOUT SECTION */
+  .ab {
+    margin-left: 150px;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /*EDUCATION SECTION */
+  .education {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .edu {
+    width: 90%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .edu ul li {
+    font-size: 14px;
+  }
+
+  .mar {
+    font-size: 22px;
+  }
+
+  /*CONTACT SECTION */
+  .contact {
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .contact-form h1 {
+    font-size: 22px;
+  }
+
+  .contact-form button {
+    width: 80%;
+    font-size: 14px;
+    margin: 0 10%;
+  }
+
+  /*FOOTER SECTION */
+  footer {
+    flex-direction: column;
+    padding: 8px;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .app ul {
+    gap: 15px;
+    margin: 3px 0;
+  }
+
+  .app ul .logo a img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logic h5 {
+    font-size: 14px;
+  }
+}
